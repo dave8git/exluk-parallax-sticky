@@ -195,6 +195,7 @@ ul li:hover {
 
     .open-slide {
         visibility: visible;
+        z-index: 2;
     }
 
 /* parallax - do skasowania */

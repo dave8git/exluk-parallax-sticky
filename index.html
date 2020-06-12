@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar-top</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+                    <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+                    <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+                </svg>
+            </a>
+        </span>
+        <div class="pimg-1">
+            <div class="ptext">
+                <span class="border">
+                    Lorem, ipsum.
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="#">O mnie</a>
+        <a href="#">Projekty</a>
+        <a href="#">Kontakt</a>
+        <p>tel. 696 055 969</p>
+        <p>email: flaku4@gmail.com</p>
+    </div>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+
+    <section class="section section-light">
+        <h2>Section One</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quae suscipit rem iste exercitationem laudantium reiciendis! Ad nobis culpa quibusdam est odit laudantium ipsum, commodi repudiandae laborum eum eos impedit! Facilis vel rerum at iure recusandae dicta quaerat nam, reiciendis eaque sequi sed quae delectus quia repudiandae sit blanditiis minus animi, voluptates dolorem nulla unde vitae earum consequuntur. Voluptas, eveniet officiis. Consequatur eos voluptas omnis sequi architecto. Molestias expedita, voluptatibus debitis fugiat iure blanditiis, reiciendis ad consequatur sequi omnis inventore eaque! At suscipit sint, officia necessitatibus exercitationem natus quaerat similique quam animi vel perferendis accusantium. Nihil aut tempore voluptatibus sed.
+        </p>
+    </section>
+    
+    <div class="pimg-2">
+        <div class="ptext">
+            <span class="border trans">
+                Lorem, ipsum dolor.
+            </span>
+        </div>
+    </div>
+    
+    <section class="section section-dark">
+        <h2>Section Two</h2>
+        <p>
+             Nulla quae suscipit rem iste exercitationem laudantium reiciendis! Ad nobis culpa quibusdam est odit laudantium ipsum, commodi repudiandae laborum eum eos impedit! Facilis vel rerum at iure recusandae dicta quaerat nam, reiciendis eaque sequi sed quae delectus quia repudiandae sit blanditiis minus animi, voluptates dolorem nulla unde vitae earum consequuntur. Voluptas, eveniet officiis. Consequatur eos voluptas omnis sequi architecto. Molestias expedita, voluptatibus debitis fugiat iure blanditiis, reiciendis ad consequatur sequi omnis inventore eaque! At suscipit sint, officia necessitatibus exercitationem natus quaerat similique quam animi vel perferendis accusantium. Nihil aut tempore voluptatibus sed.
+        </p>
+    </section>
+    
+    <div class="pimg-3">
+        <div class="ptext">
+            <span class="border trans">
+                Lorem, ipsum dolor.
+            </span>
+        </div>
+    </div>
+    
+    <section class="section section-dark">
+        <h2>Section Three</h2>
+        <p>
+             Nulla quae suscipit rem iste exercitationem laudantium reiciendis! Ad nobis culpa quibusdam est odit laudantium ipsum, commodi repudiandae laborum eum eos impedit! Facilis vel rerum at iure recusandae dicta quaerat nam, reiciendis eaque sequi sed quae delectus quia repudiandae sit blanditiis minus animi, voluptates dolorem nulla unde vitae earum consequuntur. Voluptas, eveniet officiis. Consequatur eos voluptas omnis sequi architecto. Molestias expedita, voluptatibus debitis fugiat iure blanditiis, reiciendis ad consequatur sequi omnis inventore eaque! At suscipit sint, officia necessitatibus exercitationem natus quaerat similique quam animi vel perferendis accusantium. Nihil aut tempore voluptatibus sed.
+        </p>
+    </section>
+    
+    <div class="pimg-1">
+        <div class="ptext">
+            <span class="border trans">
+                Lorem, ipsum.
+            </span>
+        </div>
+    </div>
+
+  
+    </div>
+    <script>
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '250px';
+            document.getElementById('main').style.marginLeft = '250px';
+        }
+        function closeSlideMenu() {
+            document.getElementById('side-menu').style.width = '0';
+            document.getElementById('main').style.marginLeft = '0';
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

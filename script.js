@@ -1,4 +1,5 @@
 const header = document.querySelector("header"); 
+const hoverButton = document.querySelectorAll("li");
 const sectionOne = document.querySelector(".banner"); 
 
 const sectionOneOptions = {}; 
@@ -8,12 +9,27 @@ const sectionOneObserver = new IntersectionObserver(function(
 ) {
     entries.forEach(entry => {
         if (!entry.isIntersecting) {
-            header.classList.add("header-added")
+            header.classList.add("header-added");
+            hoverButton.forEach(function(li) {
+                li.classList.add("yellow");
+            })
         } else {
             header.classList.remove("header-added"); 
+            hoverButton.forEach(function(li) {
+                li.classList.remove("yellow");
+                li.classList.add("uli");
+            })
         }
     });
 }, 
 sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
+
+hoverButton.forEach(button => {
+    button.addEventListener('click', function () {
+        hoverButton.forEach(btn => btn.classList.remove('active'));
+        this.classList.toggle('active');
+        console.log(this);
+    });
+});

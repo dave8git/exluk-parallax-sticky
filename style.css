@@ -30,7 +30,7 @@ body {
     width: 100%;
     /* height: calc(100vh - 50px); */
     height: 100vh;
-    top: -50px;
+    top: -59px;
     /* background: url(photo-of-person-reading-1928151.jpg); */
     background-size: cover;
     transition: .4s;
@@ -42,7 +42,7 @@ header {
     position: sticky;
     top: 0;
     width: 100%;
-    height: 49px;
+    height: 60px;
     background: rgba(0,0,0,0.4);
     padding: 0 100px;
     box-sizing: border-box;
@@ -84,7 +84,7 @@ header:hover img {
 }
 
 header img {
-    width: 40px;
+    width: 57px;
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -96,12 +96,12 @@ ul {
     display: flex; 
     margin: 0; 
     padding: 0;
-    height: 50px;
+    height: 60px;
 }
 
 ul li {
     list-style: none; 
-    line-height: 50px;
+    line-height: 60px;
     transition: .2s;
     height: 98%;
 }
@@ -192,6 +192,12 @@ ul li a {
     min-height: 400px; 
 }
 
+.trans {
+    background-color: rgba(0,0,0,0.4);
+    z-index: 15;
+    /* border: 2px solid red; */
+}
+
 /* fade in gallery */
 
 .columns {
@@ -211,7 +217,7 @@ ul li a {
     opacity: 1; 
   }
   .more-stuff-grid {
-    background: #f4f4f4;
+    /* background: #f4f4f4; */
     padding: 4em 0;
     display: grid;
     grid-gap: 2em;
@@ -224,14 +230,26 @@ ul li a {
   
   .from-left {
     grid-column: 2 / 3;
+    transform: translateX(-50%)
   }
   
   .from-right {
     grid-column: 3 / 4;
+    transform: translateX(50%);
+  }
+
+  .from-left,
+  .from-right {
+      transition: transform 400ms ease-in;
+  }
+
+  .from-left.appear, 
+  .from-right.appear {
+      transform: translateX(0);
   }
 
 .pimg-3 {
-    background-image: url(action-america-architecture-avenue-378570.jpg);
+    background-image: url(wood-shavings__2.jpg);
     min-height: 400px; 
 }
 .pimg-1, .pimg-2, .pimg-3 {
@@ -284,13 +302,13 @@ ul li a {
 }
 
 .ptext .border {
-    background-color: #111;
+    /* background-color: #111; */
     color: #fff; 
     padding: 20px;
 }
 
 .ptext .border.trans {
-    background-color: transparent;
+    /* background-color: transparent; */
 }
 /* ------------------------------------*/ 
 

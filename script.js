@@ -2,6 +2,8 @@ const header = document.querySelector("header");
 const hoverButton = document.querySelectorAll("li");
 const sectionOne = document.querySelector(".banner"); 
 
+const sliders = document.querySelectorAll(".slide-in");
+
 const sectionOneOptions = {}; 
 const sectionOneObserver = new IntersectionObserver(function(
     entries,
@@ -32,4 +34,25 @@ hoverButton.forEach(button => {
         this.classList.toggle('active');
         console.log(this);
     });
+});
+
+
+const appearOptions = {
+    threshold: 0, 
+    rootMargin: "0px 0px -250px 0px"
+};
+
+const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
+        } else {
+            entry.target.classList.add("appear");
+            appearOnScroll.unobserve(entry.target);
+        }
+    });
+}, appearOptions);
+
+sliders.forEach(slider => {
+    appearOnScroll.observe(slider);
 });

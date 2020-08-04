@@ -248,6 +248,10 @@ ul li a {
       transform: translateX(0);
   }
 
+  .section-dark img {
+      height: 400px; 
+      weight: 400px;
+  }
 .pimg-3 {
     background-image: url(wood-shavings__2.jpg);
     min-height: 400px; 

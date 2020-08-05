@@ -250,7 +250,7 @@ ul li a {
 
   .section-dark img {
       height: 400px; 
-      weight: 400px;
+      width: 400px;
   }
 .pimg-3 {
     background-image: url(wood-shavings__2.jpg);
@@ -264,6 +264,15 @@ ul li a {
     background-repeat: no-repeat;
 
     background-attachment: fixed;
+}
+
+.picts_gallery img {
+    margin: 5px;
+    transition: 1s;
+}
+
+.picts_gallery img:hover {
+    transform: scale(1.1);
 }
 
 .pimg-1 {

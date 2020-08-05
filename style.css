@@ -27,6 +27,11 @@ body {
     display: flex; 
     justify-content: center; 
     align-items: center;
+    flex-wrap: nowrap;
+}
+
+.flex-space-around {
+    justify-content: space-around;
 }
 
 /* banner */
@@ -377,17 +382,18 @@ ul li a {
 /* media queries */
 
 .footer {
-    display: flex;
-    justify-content: space-between;
     color: #a0a0a0;
     flex-direction: row;
     width: 100%;
+    background-color: black;
 }
-
 .footer a img {
-    
     width: 100px;
     height: 100px;
+}
+
+.footer-fb-link {
+    display: flex;
 }
 @media (max-width: 768px) {
 

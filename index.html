@@ -16,36 +16,37 @@
     <script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
 </head>
+
 <body>
     <header class="height-hover">
         <a href="#" class="logo"><img src="logo.jpg" alt="logo exluk"></a>
         <ul>
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Our Team</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">O nas</a></li>
+            <li><a href="#projects">Realizacje</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+            <li><a href="#">Nasz zespół</a></li>
+            <li><a href="#contact">Kontakt</a></li>
         </ul>
     </header>
     <div class="banner">
         <span class="open-slide">
-            <a href="#" onclick="openSlideMenu()">
-                <svg width="30" height="30">
-                    <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
-                    <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
-                    <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
-                </svg>
-            </a>
-        </span>
-        
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+          <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+          <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+          <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+        </svg>
+      </a>
+    </span>
+
         <div class="pimg-1">
             <div class="banner-text">
                 <span class="banner-content">
-                    <span class="main-title">Witamy w EXLUK!</span>
-                    <span class="sub-title">PRODUKCJA MEBLI ORAZ FORM INDUSTRIALNYCH</span>
-                    <a href="#" class="btn-one">Kontakt</a>
-                    <a href="#" class="btn-one">Galeria</a>
+          <span class="main-title">Witamy w EXLUK!</span>
+                <span class="sub-title">PRODUKCJA MEBLI ORAZ FORM INDUSTRIALNYCH</span>
+                <a href="#contact" class="btn-one btn-background-slide">Kontakt</a>
+                <a href="#gallery" class="btn-one btn-background-slide">Galeria</a>
                 </span>
             </div>
         </div>
@@ -58,123 +59,135 @@
         <p>tel. 0000000000</p>
         <p>email: email@gmail.com</p>
     </div>
-  
 
-    <div class="slider"></div>
+
+    <div id="about" class="slider"></div>
     <section class="section section-light font-testing">
-      <div class="section-content">
-        <h2 class="Quicksand">Section One</h2>
-        <p class="Quicksand container-medium">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quae suscipit rem iste exercitationem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sunt tempore qui harum iste consequatur sint. Nam, cumque soluta. Beatae! Lorem ipsum dolor sit Lorem ipsum dolor sit amet. Lorem, ipsum. Lorem ipsum dolor sit. Lorem, ipsum. Lorem. laudantium reiciendis! 
-        </p>
-      </div>
+        <div class="section-content">
+            <h2 class="Quicksand">Section One</h2>
+            <p class="Quicksand container-medium">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quae suscipit rem iste exercitationem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sunt tempore qui harum iste consequatur sint. Nam, cumque soluta. Beatae! Lorem ipsum
+                dolor sit Lorem ipsum dolor sit amet. Lorem, ipsum. Lorem ipsum dolor sit. Lorem, ipsum. Lorem. laudantium reiciendis!
+            </p>
+        </div>
     </section>
-    
-    <div class="pimg-2 flex-center">
-        <div class="ptext"> 
-                Nasze Projekty
+
+    <div id="projects" class="pimg-2 flex-center">
+        <div class="ptext">
+            Nasze Projekty
         </div>
     </div>
-    
-    <section class="section section-dark">
+
+    <section class="section section-dark invisible-mobile">
         <!-- <h2>Nasze Projekty</h2> -->
         <div class="home-more-stuff">
             <div class="more-stuff-grid">
-              <img
-                src="gal_vert/1_gal_vert.jpg"
-                alt=""
-                class="slide-in from-left"
-              />
-              <p class="slide-in from-right">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
-                quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
-                omnis sapiente neque cumque consequuntur reiciendis deserunt.
-                Dolorem vero exercitationem consequuntur, eligendi cupiditate
-                debitis facilis quibusdam magni. Eveniet.
-              </p>
+                <img src="gal_vert/1_gal_vert.jpg" alt="" class="slide-in from-left" />
+                <p class="slide-in from-right">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+                    cupiditate debitis facilis quibusdam magni. Eveniet.
+                </p>
             </div>
             <div class="more-stuff-grid">
-              <p class="slide-in from-left">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
-                quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
-                omnis sapiente neque cumque consequuntur reiciendis deserunt.
-                Dolorem vero exercitationem consequuntur, eligendi cupiditate
-                debitis facilis quibusdam magni. Eveniet.
-              </p>
-              <img
-                src="gal_vert/2_gal_vert.JPG"
-                alt=""
-                class="slide-in from-right"
-              />
+                <p class="slide-in from-left">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+                    cupiditate debitis facilis quibusdam magni. Eveniet.
+                </p>
+                <img src="gal_vert/2_gal_vert.JPG" alt="" class="slide-in from-right" />
             </div>
             <div class="more-stuff-grid">
-              <img src="gal_vert/3_gal_vert.JPG" alt="" class="slide-in from-left" />
-              <p class="slide-in from-right">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
-                quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
-                omnis sapiente neque cumque consequuntur reiciendis deserunt.
-                Dolorem vero exercitationem consequuntur, eligendi cupiditate
-                debitis facilis quibusdam magni. Eveniet.
-              </p>
+                <img src="gal_vert/3_gal_vert.JPG" alt="" class="slide-in from-left" />
+                <p class="slide-in from-right">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+                    cupiditate debitis facilis quibusdam magni. Eveniet.
+                </p>
             </div>
             <div class="more-stuff-grid">
-              <p class="slide-in from-left">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
-                quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
-                omnis sapiente neque cumque consequuntur reiciendis deserunt.
-                Dolorem vero exercitationem consequuntur, eligendi cupiditate
-                debitis facilis quibusdam magni. Eveniet.
-              </p>
-              <img
-                src="gal_vert/4_gal_vert.JPG"
-                alt=""
-                class="slide-in from-right"
-              />
+                <p class="slide-in from-left">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+                    cupiditate debitis facilis quibusdam magni. Eveniet.
+                </p>
+                <img src="gal_vert/4_gal_vert.JPG" alt="" class="slide-in from-right" />
             </div>
             <div class="more-stuff-grid">
-              <img src="gal_vert/5_gal_vert.JPG" alt="" class="slide-in from-left" />
-              <p class="slide-in from-right">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
-                quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
-                omnis sapiente neque cumque consequuntur reiciendis deserunt.
-                Dolorem vero exercitationem consequuntur, eligendi cupiditate
-                debitis facilis quibusdam magni. Eveniet.
-              </p>
+                <img src="gal_vert/5_gal_vert.JPG" alt="" class="slide-in from-left" />
+                <p class="slide-in from-right">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+                    cupiditate debitis facilis quibusdam magni. Eveniet.
+                </p>
             </div>
             <div class="more-stuff-grid">
-              <p class="slide-in from-left">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
-                quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
-                omnis sapiente neque cumque consequuntur reiciendis deserunt.
-                Dolorem vero exercitationem consequuntur, eligendi cupiditate
-                debitis facilis quibusdam magni. Eveniet.
-              </p>
-              <img
-                src="gal_vert/6_gal_vert.JPG"
-                alt=""
-                class="slide-in from-right"
-              />
+                <p class="slide-in from-left">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+                    cupiditate debitis facilis quibusdam magni. Eveniet.
+                </p>
+                <img src="gal_vert/6_gal_vert.JPG" alt="" class="slide-in from-right" />
             </div>
-          </div>
+        </div>
     </section>
-    
-    <div class="pimg-3 flex-center">
+
+    <section class="gallery-mobile visible-mobile invisible-desktop">
+        <div class="picture-section">
+            <img src="gal_vert/1_gal_vert.jpg" alt="" />
+            <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+                cupiditate debitis facilis quibusdam magni. Eveniet.
+            </p>
+        </div>
+        <div class="picture-section">
+            <img src="gal_vert/2_gal_vert.jpg" alt="" />
+            <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+                cupiditate debitis facilis quibusdam magni. Eveniet.
+            </p>
+        </div>
+        <div class="picture-section">
+            <img src="gal_vert/3_gal_vert.jpg" alt="" />
+            <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+                cupiditate debitis facilis quibusdam magni. Eveniet.
+            </p>
+        </div>
+        <div class="picture-section">
+            <img src="gal_vert/4_gal_vert.jpg" alt="" />
+            <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+                cupiditate debitis facilis quibusdam magni. Eveniet.
+            </p>
+        </div>
+        <div class="picture-section">
+            <img src="gal_vert/5_gal_vert.jpg" alt="" />
+            <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+                cupiditate debitis facilis quibusdam magni. Eveniet.
+            </p>
+        </div>
+        <div class="picture-section">
+            <img src="gal_vert/6_gal_vert.jpg" alt="" />
+            <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+                cupiditate debitis facilis quibusdam magni. Eveniet.
+            </p>
+        </div>
+    </section>
+
+    <div id="gallery" class="pimg-3 flex-center">
         <div class="ptext">
-    
-                Galeria Realizacji
-           
+
+            Galeria Realizacji
+
         </div>
     </div>
-    
+
     <section class="section section-dark picts_gallery">
-        <a href="/picts_gallery/pict_001.JPG" data-lightbox="gallery2"><img src="/picts_gallery/pict_001.JPG" alt="mebel"></a>  
+        <a href="/picts_gallery/pict_001.JPG" data-lightbox="gallery2"><img src="/picts_gallery/pict_001.JPG" alt="mebel"></a>
         <a href="/picts_gallery/pict_002.JPG" data-lightbox="gallery2"><img src="/picts_gallery/pict_002.JPG" alt="mebel"></a>
         <a href="/picts_gallery/pict_003.JPG" data-lightbox="gallery2"><img src="/picts_gallery/pict_003.JPG" alt="mebel"></a>
         <a href="/picts_gallery/pict_004.JPG" data-lightbox="gallery2"><img src="/picts_gallery/pict_004.JPG" alt="mebel"></a>
         <a href="/picts_gallery/pict_005.JPG" data-lightbox="gallery2"><img src="/picts_gallery/pict_005.JPG" alt="mebel"></a>
         <a href="/picts_gallery/pict_006.JPG" data-lightbox="gallery2"><img src="/picts_gallery/pict_006.JPG" alt="mebel"></a>
         <a href="/picts_gallery/pict_007.JPG" data-lightbox="gallery2"><img src="/picts_gallery/pict_007.JPG" alt="mebel"></a>
-        <a href="/picts_gallery/pict_008.JPG" data-lightbox="gallery2"><img src="/picts_gallery/pict_008.JPG" alt="mebel"></a> 
+        <a href="/picts_gallery/pict_008.JPG" data-lightbox="gallery2"><img src="/picts_gallery/pict_008.JPG" alt="mebel"></a>
         <a href="/picts_gallery/pict_009.JPG" data-lightbox="gallery2"><img src="/picts_gallery/pict_009.JPG" alt="mebel"></a>
         <a href="/picts_gallery/pict_010.JPG" data-lightbox="gallery2"><img src="/picts_gallery/pict_010.JPG" alt="mebel"></a>
         <a href="/picts_gallery/pict_011.JPG" data-lightbox="gallery2"><img src="/picts_gallery/pict_011.JPG" alt="mebel"></a>
@@ -183,17 +196,17 @@
         <a href="/picts_gallery/pict_014.JPG" data-lightbox="gallery2"><img src="/picts_gallery/pict_014.JPG" alt="mebel"></a>
         <a href="/picts_gallery/pict_015.JPG" data-lightbox="gallery2"><img src="/picts_gallery/pict_015.JPG" alt="mebel"></a>
         <a href="/picts_gallery/pict_016.JPG" data-lightbox="gallery2"><img src="/picts_gallery/pict_016.JPG" alt="mebel"></a>
-        
-        
+
+
     </section>
-    
-    <section class="footer">
+
+    <section id="contact" class="footer">
         <div class="container flex-center flex-space-around">
             <div class="right-column">
                 <a href="#" class="logo"><img src="logo-inverted.jpg" alt="logo exluk"></a>
             </div>
             <div class="left-column flex-center">
-                <a class="footer-fb-link" href="https://www.facebook.com/Exluk-204991446801543">
+                <a class="footer-fb-link" href="https://www.facebook.com/Exluk-204991446801543" target="_blank">
                     <i class="iconbtn fab fa-facebook-square"></i>
                     <p>Znajdź nas na Facebooku</p>
                 </a>
@@ -201,13 +214,14 @@
         </div>
     </section>
 
-  
+
     </div>
     <script>
         function openSlideMenu() {
             document.getElementById('side-menu').style.width = '250px';
             document.getElementById('main').style.marginLeft = '250px';
         }
+
         function closeSlideMenu() {
             document.getElementById('side-menu').style.width = '0';
             document.getElementById('main').style.marginLeft = '0';
@@ -216,4 +230,4 @@
     <script src="script.js"></script>
 </body>
 
-</html>  
+</html>

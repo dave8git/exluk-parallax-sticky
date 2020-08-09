@@ -4,7 +4,9 @@ const sectionOne = document.querySelector(".banner");
 
 const sliders = document.querySelectorAll(".slide-in");
 
-const sectionOneOptions = {}; 
+const sectionOneOptions = {
+    rootMargin: "-70px 0px 0px 0px"
+}; 
 const sectionOneObserver = new IntersectionObserver(function(
     entries,
     sectionOneObserver
